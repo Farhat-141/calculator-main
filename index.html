@@ -1,0 +1,79 @@
+
+<!Doctype html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="icon.png" type="">
+        
+    </head>
+    <body>
+        <div class="all">
+            <br>
+            <div class="container">
+                <div style="width: auto;">
+                    <p id="result"> </p>
+                    <br>
+                    <hr>
+                    <div>
+                        <button style="color: red;" class="btn" id="clear" onclick="reset()"> C </button>
+                        <button class="btn" id="percent" style="color: lightgreen;" onclick="display('%')" >%</button>
+                        <button class="btn" id="divition"style="color: lightgreen;" onclick="display('/')">/</button>
+                        <button class="btn" id="expand" onclick=""> Expand </button>
+                    </div>
+                    <div>
+                        <button class="btn" onclick="display('7')">7</button>
+                        <button class="btn" onclick="display('8')">8</button>
+                        <button class="btn" onclick="display('9')">9</button>
+                        <button class="btn" onclick="display('*')" style="color: lightgreen;">*</button>
+                    </div>
+                    <div>
+                        <button class="btn" onclick="display('4')">4</button>
+                        <button class="btn" onclick="display('5')">5</button>
+                        <button class="btn" onclick="display('6')">6</button>
+                        <button class="btn" onclick="display('-')" style="color: lightgreen;">-</button>
+                    </div>
+                    <div>
+                        <button class="btn" onclick="display('1')">1</button>
+                        <button class="btn" onclick="display('2')">2</button>
+                        <button class="btn" onclick="display('3')">3</button>
+                        <button class="btn" onclick="display('+')" style="color: lightgreen;">+</button>
+                    </div>
+                    <div>
+                        <button class="btn" onclick="display('0')">0</button>
+                        <button class="btn" onclick="display('.')">.</button>
+                        <button class="btn" id="equal" onclick="calculate()">=</button>
+                    </div>
+                </div>
+                <div class="transfer">
+                    <h2>Currency Converter</h2>
+
+                    <input id="currencyAmount" type="number" placeholder="Amount">
+
+                    <div>
+                        <select id="fromCurrency">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="DZD">DZD</option>
+                            <option value="GBP">GBP</option>
+                        </select>
+
+                        <span>→</span>
+
+                        <select id="toCurrency">
+                            <option value="DZD">DZD</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                        </select>
+                    </div>
+
+                    <button id="convert">Convert</button>
+
+                    <p id="conversionResult"></p>
+                </div>
+            </div>
+        </div>
+            <script src="scripts.js"></script>    
+    </body>
+</html>
